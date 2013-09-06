@@ -95,7 +95,7 @@ module Ethon
         when Array
           h.each_with_index do |v, i|
             #key = "#{prefix}[#{i}]"
-            key = prefix
+            key = "#{prefix}[]"
             pairs_for(v, key, pairs)
           end
         end
